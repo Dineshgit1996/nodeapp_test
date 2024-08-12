@@ -18,7 +18,7 @@ spec:
       - name: nodeapp
         image: dineshraju1186/nodeapp:1.{{BUILD_NUMBER}}
       imagePullSecrets:
-      - name: my-docker-secret
+      - name: docker-secret
         ports:
         - containerPort: 3000
         
