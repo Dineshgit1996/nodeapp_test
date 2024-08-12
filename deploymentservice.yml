@@ -17,10 +17,11 @@ spec:
       containers:
       - name: nodeapp
         image: dineshraju1186/nodeapp:1.{{BUILD_NUMBER}}
-      imagePullSecrets:
-      - name: docker-secret
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+      - name: docker-secret  # Correct placement of imagePullSecrets
+
         
         
 ---
